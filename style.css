@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Aucznik 1303 Plus';
+    src: url(15039.otf);
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Aucznik 1303 Plus';
+}
+
+/*'Comic Sans MS', cursive  КУРСИВЫ*/
+/*Verdana, Geneva, Tahoma, sans-serif  ХУЙ ЗНАЕТ*/
+/*'Courier New', Courier, monospace  МОНОШИРИНА ПРИКОЛЬНО*/
+/*Arial, Helvetica, sans-serif  ГОВНО*/
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h2{
+    text-align: center;
+}
+
+table {
+    margin-left: 10%;
+}
+
+h3 {
+    margin-left: 10%;
+}
+
+h4{
+    margin-left: 10%;
+}
+
+p{
+    margin-left: 10%;
+}
+
+.vozrast{
+    margin-left: 0%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+ol{
+    margin-left: 10%;
+}
+
+.mymenu {
+    margin-left: 10%;
+    color: red;
+    line-height: 2.5;
+    text-decoration: none;
+}
+
+img.mymenu {
+    margin-right: 10%;
+}
+
+video {
+    margin-left: 10%;
+    max-width: 400px;
+}
+
+ol a {
+    margin: auto;
+    color: white;
+    line-height: 1.5;
+}
+
+div#example h2::first-letter {
+    color: red;
+}
+
+div a {
+    color: red;
+}
+
+img {
+    margin-left: 10%;
+}
+
+
+audio {
+    margin-left: 10%;
+}
+
+.mymain {
+    position:absolute;
+    bottom:10%;
+    right:10%;
+}
+
+/*!!!!!!!!!!!!!!!!!!*/
+
+/* W3C standard
+   сейчас только для Firefox */
+   * {
+    scrollbar-width: thin;
+    scrollbar-color: red black;
+  }
+  
+  /* для Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    height: 12px; /* 12px */
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+    border: 3px solid black;
+  }
