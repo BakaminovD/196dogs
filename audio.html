@@ -7,24 +7,22 @@
         <title>Музыка</title>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
-        <script>
-            var a=document.getElementsByTagName("audio");
-             
-            function other_pause(b){
-                for(i=0;i<a.length;i++){
-                    if(!(i==b)){a[i].pause()};
-                }
-            }
-             
-        </script>
+        <script type="text/javascript" src="jquary.js"></script>
+        <script type="text/javascript" src="script.js"></script>
 
     </head>
 
     <body>
-        <div id="example">
-            <h2>Альбом<br>74 способа покончить с собой<br>(в стихах)</h2>
+        <div class="box">
+            <div id="example">
+                <h2>Альбом<br>74 способа покончить с собой<br>(в стихах)</h2>
+            </div>
+            <div class="example">
+                <img src="foto/die.jpg" alt="Обложка альбома" height="200" title="Обложка альбома">
+            </div>
         </div>
-        <table>
+        <br>
+ <!--       <table>
             <tr>
                     <td>
                             <img src="foto/die.jpg" alt="Обложка альбома" height="250" title="Обложка альбома">
@@ -44,9 +42,9 @@
                             </ol>
                     </td>
             </tr>
-            </table>
+            </table> -->
         <!--jhhglhvl-->
-        <h3 id="i1">Пролог</h3>
+<!--        <h3 id="i1">Пролог</h3>
         <audio controls onplay="other_pause(0)">
             <source src="74sp/1.mp3" type="audio/mpeg">
         </audio>
@@ -88,6 +86,27 @@
         </audio>
         <div>
             <p class="verh"><a href="#">Наверх</a></p>
+        </div> -->
+
+        <div class="wrp">
+            <div class="player">
+                <div class="play-pause" id="-1"></div>
+                <div class="nameSong">. . .</div>
+                <div class="settings">
+                    <div class="sledBtn" id="pred" data-id="-1">◄</div>
+                    <div class="sledBtn" id="sled" data-id="-1">►</div>
+                    <div class="mute">♪</div>
+                    <input type="range" class="volume" min="0" max="100" value="100" oninput="range()">
+                </div>
+                <div class="bar">
+                    <div class="setTime"></div>
+                    <div class="range">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="time">0:00</div>
+            </div>
         </div>
+
     </body>
 </html>

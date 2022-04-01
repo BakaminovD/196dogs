@@ -84,6 +84,8 @@ div#example h2::first-letter {
     color: red;
 }
 
+
+
 div a {
     color: red;
 }
@@ -93,15 +95,23 @@ img {
 }
 
 
-audio {
+/*audio {
     margin-left: 10%;
-}
+}*/
 
 .mymain {
     position:absolute;
     bottom:10%;
     right:10%;
 }
+
+.example {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 
 /*!!!!!!!!!!!!!!!!!!*/
 
@@ -125,3 +135,218 @@ audio {
     border-radius: 10px;
     border: 3px solid black;
   }
+
+  /* ПЛЕЕР !!!!*/
+
+  .range, .play-pause, .song, .sledBtn, .mute {
+    cursor: pointer;
+}
+
+.sledBtn {
+    margin: 0 10px;
+}
+
+.wrp {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 70%;
+    box-shadow: 0 0 15px black;/*rgba (0, 0, 0, 0,2);*/
+    border-radius: 5px;
+}
+
+.mute {
+    color: red;
+}
+
+.player, .song {
+    position: relative;
+    width: 680px;
+    height: 50px;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    background: black/*#e74c3c;*/
+    /*border-radius: 5px 5px 0 0;*/
+}
+
+.player {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.play-pause {
+    float: left;
+    background: black url(foto/play.png) no-repeat;
+    background-size: 60px;
+    background-position: -5px 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.nameSong, .settings, .nameSong_song {
+    position: absolute;
+    color: white; /* #ecf0f1;*/
+    padding: 5px;
+    top: 0;
+    left: 400px;
+    font-size: 18px;
+}
+
+.settings {
+    left: 80px;
+}
+
+.settings div {
+    float: left;
+    margin-right: 5px;
+}
+
+.mute, .volume {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+/*input {
+    height: 5px;
+    background-color: white;
+    background: white;
+}*/
+
+.bar {
+    position: relative;
+    float: left;
+    background: black;
+    width: 540px;
+    height: 40px;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.setTime {
+    position: absolute;
+    top: 0;
+    background: black;
+    color: white; /*#ecf0f1;*/
+    font-size: 12px;
+    padding: 2px;
+    display: none;
+}
+
+.range, .progress {
+    height: 5px;
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+}
+
+.range {
+    background: white;
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: red; /*#1abc9c;*/
+    z-index: 2;
+}
+
+.time, .duration_song {
+    float: left;
+    font-size: 20px;
+    margin: 15px 0 0 15px;
+    color: white; /*#ecf0f1;*/
+}
+
+.song {
+    height: 25px;
+    background: black; /*rgb(26, 188, 156);*/
+    color: white;/*#ecf0f1;*/
+    float: left;
+    border-radius: 0;
+}
+
+.song:hover {
+    /*background: rgba(26, 188, 156, 0.8);*/
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 23px;
+}
+
+.play-pause_song {
+    background: black url(foto/play.png) no-repeat;
+    background-size: 30px;
+    background-position: -2px 0px;
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+    margin-right: 0;
+}
+
+.nameSong_song, .duration_song {
+    font-size: 14px;
+}
+
+.nameSong_song {
+    top: 10px;
+    left: 80px;
+}
+
+.nameSong::first-letter{
+    color: red;
+}
+
+.nameSong_song::first-letter{
+    color: red;
+}
+
+.duration_song {
+    float: right;
+    margin-top: -15px;
+}
+
+.volume {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 2px;
+    border-radius: 2px;
+    background: -webkit-linear-gradient(left, red 0%, red 100%, white 0%, white 100%);
+}
+
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.volume::-moz-range-track {
+    -moz-appearance: none;
+    width: 150px;
+    height: 2px;
+    border-radius: 2px;
+    background: -moz-linear-gradient(left, red 0%, red 100%, white 0%, white 100%);
+}
+
+.volume::-moz-range-thumb {
+    -moz-appearance: none;
+    background: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.volume::-webkit-slider-thumb:hover, .volume::-webkit-slider-thumb:active {
+    width: 13px;
+    height: 13px;
+}
+
+.volume::-moz-range-thumb:hover, .volume::-moz-range-thumb:active {
+    width: 13px;
+    height: 13px;
+}
